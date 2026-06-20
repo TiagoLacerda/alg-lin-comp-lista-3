@@ -13,15 +13,19 @@ build:
 	src/qr/qr.cpp \
 	src/utils/utils.cpp \
 	src/main.cpp \
-	-o main.exe $(FLAGS) $(INCLUDES)
+	-o main $(FLAGS) $(INCLUDES)
 
 tests:
 	g++ -g \
+	src/lu/lu.test.cpp \
 	src/matrix/matrix_io.test.cpp \
 	src/matrix/matrix_operations.test.cpp \
 	src/matrix/matrix.test.cpp \
+	src/qr/qr.test.cpp \
+	src/lu/lu.cpp \
 	src/matrix/matrix_io.cpp \
 	src/matrix/matrix_operations.cpp \
 	src/matrix/matrix.cpp \
+	src/qr/qr.cpp \
 	src/test.cpp \
-	-o tests.exe $(FLAGS) $(INCLUDES)
+	-o tests $(FLAGS) $(INCLUDES)

@@ -1,3 +1,3 @@
-g++ src/main.cpp -I C:/raylib/raylib/src -L C:/raylib/raylib/src -lraylib -lopengl32 -lgdi32 -lwinmm -o main.exe
+Repositório dedicado à disciplina de Álgebra Linear Computacional do curso de Pós-Graduação em Ciência da Computação na Universidade Federal Fluminense
 
-g++ src/main.cpp -I C:/raylib/raylib/src -I src -L C:/raylib/raylib/src -lraylib -lopengl32 -lgdi32 -lwinmm -o main.exe
+Implementações de decomposição LU com pivoteamento completo (`src/lu/lu.cpp`) e QR econômico com pivoteamento de colunas (`src/qr/qr.cpp`).
