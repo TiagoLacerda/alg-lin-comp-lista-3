@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{amsmath, amssymb, geometry}
+\usepackage{amsthm}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{flushleft}
+    \textbf{\Large Tiago Lacerda} \\[4pt]
+    Álgebra Linear Computacional \\[2pt]
+    Lista de Exercícios 03 \\[2pt]
+    2026.1
+\end{flushleft}
+
+4. Seja $P$ a matriz de permutação de linhas da decomposição LU com
+pivoteamento total. Por construção, $P$ é uma matriz em que cada linha e cada
+coluna contém exatamente um elemento igual a $1$, sendo todos os demais
+elementos iguais a $0$.
+
+Assim, toda linha e toda coluna de $P$ tem norma $1$, e o produto interno entre
+linhas ou colunas distintas é $0$. Considere:
+
+\[
+    (P^{T}P)_{ij} = \sum_{k} P_{ki}P_{kj}.
+\]
+
+Se $i=j$, a soma resulta em $1$; caso contrário, resulta em $0$. Portanto,
+
+\[
+    P^{T}P = I,
+\]
+
+ou seja, $P^{-1} = P^{T}$, atendendo à definição de matriz ortogonal.
+
+O mesmo argumento é válido para a matriz de permutação de colunas $Q$.
+
+\bigbreak
+
+5. De maneira geral, imagens naturais não apresentam grandes variações entre pixeis vizinhos, exceto em contornos e bordas. Assim, bases como as de Fourier e as wavelets de Haar são capazes de representar esses dados com uma quantidade reduzida de coeficientes sem grande perda de fidelidade. O nível de compressão pode então ser facilmente controlado pelo número de coeficientes mantidos após a transformação. Além disso, por serem bases ortogonais, suas transformações inversas são dadas pelas transpostas das matrizes de transformação, tornando a reconstrução das imagens direta, sem cálculo da inversa de uma matriz genérica.
+
+\bigbreak
+
+9, 10. https://github.com/TiagoLacerda/alg-lin-comp-lista-3
+
+
+
+
+
+
+\end{document}
